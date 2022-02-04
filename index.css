@@ -350,6 +350,10 @@ template {
   display: none;
 }
 
+ul {
+  max-width: 600px;
+}
+
 p {
   max-width: 600px;
 }
