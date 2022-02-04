@@ -21,8 +21,14 @@
       <p>
         This week, our main goal is to create our 'Home Page' on Github Pages
         where we will be hosting our future work, projects, and personal
-        information. We will also watch a video previewing what we will be
-        working on next week in class: using CSS to work with
+        information. We will update our file structure to allow organizing
+        multiple Projects and Workshops on our site which we will then link to
+        from the homepage, including your earlier earlier Questionnaire and
+        upcoming "Cross-Platform Storytelling" Project.
+      </p>
+      <p>
+        We will also watch a video previewing what we will be working on next
+        week in class: using CSS to work with
         <b>Typography on the Web</b>.
       </p>
       <p>
@@ -33,20 +39,40 @@
       </p>
       <h2>Due Next Week</h2>
       <ul>
-        <li>If you need a refresher, review last weeks content</li>
         <li>
-          Update File/Folder Organization for Organizing Studio Projects and Lab
-          Workshops
+          Catch up on last week's homework and submit your questionnaire to the
+          <u>#assignment-1</u> Slack Channel.
         </li>
         <li>
-          Create a 'Homepage' on Github with link to Questionnaire and
-          "Cross-Platform Storytelling" Project
+          If you need a refresher on HTML and CSS, or embedded content,
+          <a href="#content-to-review">review last weeks videos.</a>
         </li>
-        <li>Set up Github Pages to host your new 'Homepage'</li>
-        <li>Watch <i>Typography on the Web</i></li>
+        <li>
+          Update your
+          <a href="#file-structure-and-organization"
+            >File Structure and Organization</a
+          >
+          for Organizing Studio Projects and Lab Workshops.
+        </li>
+        <li>
+          <a href="#create-a-homepage">Create your 'Homepage'</a> and link to
+          your Questionnaire and "Cross-Platform Storytelling" project.
+        </li>
+        <li>
+          If you still need to, set up your
+          <a href="/assignment-1/index.html">Github Account and Github Page</a>.
+        </li>
+        <li>
+          <a href="new-changes-to-git-and-github">Push your new changes</a> to
+          your Github Page, and submit a link to your homepage to the
+          <u>#assignment-1-review</u> channel in Slack.
+        </li>
+        <li>
+          Watch <a href="#typography-on-the-web">Typography on the Web.</a>
+        </li>
       </ul>
       <br />
-      <h3>Content to Review</h3>
+      <h3 id="content-to-review">Videos to Review</h3>
       <ul>
         <li>
           <a href="https://vimeo.com/amtparsons/review/503145910/2e8945363c"
@@ -68,7 +94,9 @@
         </li>
       </ul>
       <br />
-      <h3>File Structure and Organization</h3>
+      <h3 id="file-structure-and-organization">
+        File Structure and Organization
+      </h3>
       <p>
         If you made it far enough last week to create a Github account or a
         Github Pages site, you should have a folder with the following
@@ -78,7 +106,7 @@
       <ul>
         <li>📁 studentname.github.io</li>
         <ul>
-          <li>📄 index.html</li>
+          <li>📄 index.html ( Questionnaire )</li>
         </ul>
       </ul>
       <br />
@@ -134,7 +162,7 @@
         <ul>
           <li>📁 projects</li>
           <li>📁 workshops</li>
-          <li>📄 index.html</li>
+          <li>📄 index.html ( Questionnaire )</li>
         </ul>
       </ul>
       <br />
@@ -153,7 +181,7 @@
           <ul>
             <li>📁 workshop-1</li>
             <ul>
-              <li>📄 index.html</li>
+              <li>📄 index.html ( Questionnaire )</li>
             </ul>
           </ul>
         </ul>
@@ -167,26 +195,64 @@
       <ul>
         <li>📁 studentname.github.io</li>
         <ul>
-          <li>📄 index.html</li>
+          <li>📄 index.html ( New Homepage )</li>
           <li>📁 projects</li>
           <li>📁 workshops</li>
           <ul>
             <li>📁 workshop-1</li>
             <ul>
-              <li>📄 index.html</li>
+              <li>📄 index.html ( Questionnaire )</li>
             </ul>
           </ul>
         </ul>
       </ul>
       <br />
-      <h4>Absolute and Relative Links</h4>
+      <h3 id="create-a-homepage">Create Your Homepage</h3>
+      <p>
+        In your 'Homepage' <u>index.html</u> file, please use the following
+        HTML5 template as a starting point for building your homepage ( right
+        click to save as an .html file ):
+      </p>
+      <a href="./template.html" download>template.html</a>
+      <p>
+        Add a link to your Questionnaire project from the homepage using a
+        'relative' link path as we discussed in class, if you need a refresher
+        please see:
+        <a
+          href="https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/"
+          target="_blank"
+          >Absolute and Relative Links</a
+        >
+      </p>
+      <p>
+        Add some links to other websites you think are interesting using
+        'Absolute' links - this could be as basic as linking to our Syllabus on
+        my Github Page or to anything else you'd like to share.
+      </p>
+      <p>
+        Finally, repeat the above process to add your "Cross-Platform
+        Storytelling" Studio Project to the repository and link to it from your
+        homepage.
+      </p>
       <br />
-      <h3>Committing New Changes to Git & Github</h3>
+      <h3 id="new-changes-to-git-and-github">
+        Committing New Changes to Git & Github
+      </h3>
       <p>
         When you are ready to update your Github Pages with your new content,
         open the Github Desktop application and navigate to the
         <u>studentname.github.io</u> repository.
       </p>
+      <figure>
+        <img
+          src="./changed-files.png"
+          alt="Repository on Github.com"
+          style="max-height: 500px"
+        />
+        <figcaption>
+          <i>Files which have been modified in your repository.</i>
+        </figcaption>
+      </figure>
       <p>
         On the left hand side, you will see all the files which have had
         changes. You can click any of those files to see what changes have been
@@ -198,6 +264,16 @@
         update and upload - most likely, you want to update the entire site so
         leave them all checked.
       </p>
+      <figure>
+        <img
+          src="./summary-and-description-of-commit.png"
+          alt="Repository on Github.com"
+          style="max-height: 500px"
+        />
+        <figcaption>
+          <i>Summary and Description of our changes in this 'Commit'.</i>
+        </figcaption>
+      </figure>
       <p>
         Now that we have selected which changes we want to include, we need to
         describe them. In the lower left-corner you will need to write a summary
@@ -205,12 +281,27 @@
         select "Commit to main" to add these changes and describe the codebases
         current state.
       </p>
+      <figure>
+        <img
+          src="./push-to-github-and-github-pages.png"
+          alt="Repository on Github.com"
+          style="max-height: 500px"
+        />
+        <figcaption>
+          <i>Pushing changes from Local Machine to Github and Github Pages.</i>
+        </figcaption>
+      </figure>
       <p>
         Finally, were going to 'Push' our new code from our Local machine to the
         Github Pages repository online so it's public!
       </p>
       <br />
       <h2 id="typography-on-the-web">Typography on the Web</h2>
+      <p>
+        In preparation for next week's new project, and for starting to get into
+        more advanced CSS topics, please watch the following demonstration
+        exploring Typography on the Web.
+      </p>
       <li>
         <a
           href="https://vimeo.com/amtparsons/review/505402445/f359a8b333"
@@ -219,6 +310,8 @@
         >
         ( 19 minutes, Password: interaction )
       </li>
+      <br />
+      <br />
     </main>
   </body>
 </html>
