@@ -8,30 +8,18 @@
 }
 
 body {
-  margin-top: 40px;
-  margin-left: 5vw;
+  margin: 1rem;
   background-color: rgba(255, 255, 255, 0.2);
   font-family: "Inter";
-  font-size: 20px;
-  line-height: 2rem;
-  font-style: normal;
+  font-size: 14px;
   letter-spacing: 0.1px;
 }
 
-ul,
-ol {
-  padding-left: 1rem;
-}
-
 a {
-  color: gray;
+  color: rgb(129, 129, 129);
   text-decoration: underline;
 }
 
-#title {
-  font-style: italic;
-}
-
-.italic {
-  font-style: italic;
+a:hover {
+  color: rgb(50, 50, 50);
 }
