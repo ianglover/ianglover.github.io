@@ -1,7 +1,37 @@
-ul {
-  max-width: 600px;
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-p {
-  max-width: 600px;
+body {
+  margin-top: 40px;
+  margin-left: 5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 2rem;
+  font-style: normal;
+  letter-spacing: 0.1px;
+}
+
+ul,
+ol {
+  padding-left: 1rem;
+}
+
+a {
+  color: gray;
+  text-decoration: underline;
+}
+
+#title {
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
 }
