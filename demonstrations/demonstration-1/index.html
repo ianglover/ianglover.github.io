@@ -12,9 +12,81 @@
     />
     <meta name="author" content="Ian Glover" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+
+      .box {
+        display: block;
+        padding: 16px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: red;
+        margin: 16px;
+      }
+
+      .title {
+        top: 20px;
+      }
+
+      .navigation {
+        border-color: green;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .content {
+        border-color: blue;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 700px) {
+        .navigation {
+          border-color: purple;
+          font-size: 32px;
+        }
+        .container {
+          flex-direction: row;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div><p>The Box</p></div>
+    <div class="box title">
+      <h1>Page Title</h1>
+    </div>
+    <div class="box container">
+      <div class="box navigation">
+        <p>Navigation</p>
+        <p>Fourth</p>
+        <p>Fifth</p>
+      </div>
+      <div class="box content">
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+      </div>
+    </div>
   </body>
 </html>
