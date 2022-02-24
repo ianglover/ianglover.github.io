@@ -1,0 +1,149 @@
+/* Personal Resets */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: "bluu next";
+  src: url("../assets/fonts/bluunext-titling.woff2") format("woff2"),
+    url("../assets/fonts/bluunext-titling.woff") format("woff"),
+    url("../assets/fonts/BluuNext-Titling.ttf") format("truetype");
+}
+
+.bluu-next {
+  font-family: "bluu next", serif;
+}
+
+body {
+  margin: 1rem 1rem;
+  margin-bottom: 4rem;
+  font-family: "bluu next", serif;
+}
+
+/* Navigation */
+
+nav {
+  z-index: 1;
+  position: relative;
+}
+
+nav ul.projects {
+  margin: 6rem 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+nav ul.projects li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul.projects li img {
+  z-index: -1;
+  position: absolute;
+  height: 20rem;
+  width: auto;
+  top: -10rem;
+  left: 50px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav ul.projects li:hover img {
+  opacity: 1;
+}
+
+/* Main Content */
+
+main {
+  position: relative;
+  z-index: -1;
+}
+
+main h1,
+main p,
+main a,
+main img {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+main a {
+  text-decoration: underline;
+}
+
+main img {
+  max-height: 80vh;
+  width: auto;
+}
+
+main h1 {
+  font-style: italic;
+}
+
+main a,
+main h1 {
+  max-width: 60ch;
+}
+
+main p {
+  max-width: 60ch;
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 4rem;
+  }
+  nav {
+    position: fixed;
+  }
+  nav ul.projects {
+    margin: initial;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 25ch 1fr 1rem;
+  }
+  main div.content {
+    order: 2;
+  }
+  main div.title {
+    order: 1;
+    margin-right: 1rem;
+    align-self: end;
+  }
+}
