@@ -12,30 +12,156 @@
     />
     <meta name="author" content="Ian Glover" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
+    <style>
+      .example {
+        font-size: 2rem;
+      }
+      .example p {
+        margin: 0;
+      }
+      .logo {
+        box-sizing: border-box;
+
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .logo .word {
+        text-transform: uppercase;
+      }
+      .logo .word .main-letter {
+      }
+      .logo .word .remaining-word {
+        display: none;
+      }
+      .reverse {
+        display: inline-block;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+      }
+      @media screen and (min-width: 768px) {
+        .example {
+          font-size: 3rem;
+        }
+        .logo {
+          padding: 0 0.5rem;
+          border: 4px solid black;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .example {
+          font-size: 4rem;
+        }
+        .logo {
+          padding: 0.5rem 1rem;
+          border: 8px solid black;
+        }
+        .logo .word {
+          padding-right: 0.8ch;
+        }
+        .logo .word:last-child {
+          padding-right: 0;
+        }
+        .logo .word .remaining-word {
+          display: inline-block;
+        }
+        .reverse {
+          display: inline-block;
+          -moz-transform: initial;
+          -webkit-transform: initial;
+          -o-transform: initial;
+          -ms-transform: initial;
+          transform: initial;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <main>
       <a href="/index.html">Core 2: Interaction Lab</a>
-      <h1>Assignment #3 - Responsive ...</h1>
-      <p>Our homework assignment is to create a Responsive ....</p>
-      <p>Please be sure to demonstrate at least the following ...:</p>
-      <ul>
-        <li>...</li>
-      </ul>
+      <h1>Assignment #3 - Responsive Logos</h1>
+      <p>
+        Our homework assignment is to create a 'Responsive' Logo. This can be a
+        logo for a real project, or you can feel free to create a new one for a
+        fake project or re-brand an existing one.
+      </p>
+      <p>
+        The logo should change at least three times - these changes could be at
+        arbitrary points based on your design or you could roughly target (1)
+        mobile, (2) tablet, and (3) laptop screen sizes.Designs must be fully
+        visible and not break on devices of any size or orientation.
+      </p>
+      <p>
+        Each breakpoint should visually add or remove visual elements, as well
+        as adjusting properties like display, font-size, margins, padding,
+        font-family, and others to effect the overall layout and treatment of
+        different parts of the logo. Try to change at least two properties per
+        screen size.
+      </p>
+      <p>
+        Take advantage of different kinds of units to cause different effects -
+        "responsive" units like View Height and View Width units can be used to
+        stretch and distort shapes or images ( see
+        <a href="https://whitney.org/" target="_blank">The Whitney's Logo</a> ),
+        while unchanging pixel-based units can be used to establish consistent
+        forms.
+      </p>
+      <br />
+      <div class="example">
+        <div class="logo">
+          <p class="word">
+            <span class="main-letter">N</span
+            ><span class="remaining-word">ine</span>
+          </p>
+          <p class="word">
+            <span class="main-letter">I</span
+            ><span class="remaining-word">nch</span>
+          </p>
+          <p class="word">
+            <span class="main-letter reverse">N</span
+            ><span class="remaining-word">ails</span>
+          </p>
+        </div>
+      </div>
+      <p style="opacity: 0.6">
+        Example Responsive Logo with Breakpoints at 768 and 1200px.
+      </p>
+      <br />
       <h3>Resources</h3>
-      <h4>Type of Resources</h4>
       <ul>
         <li>
-          <a href="">Resource Example - Source of Resource</a>
+          <a
+            href="https://css-tricks.com/a-complete-guide-to-css-media-queries/"
+            >A Complete Guide to CSS Media Queries - CSS Tricks</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/"
+            target="_blank"
+            >Media Queries for Standard Devices - CSS Tricks</a
+          >
+        </li>
+        <li>
+          <a href="https://css-tricks.com/the-shapes-of-css/" target="_blank"
+            >The Shapes of CSS - CSS Tricks</a
+          >
         </li>
       </ul>
-      <h4>Second Type of Resources</h4>
+      <h3>Reference</h3>
       <ul>
         <li>
-          <a href="">Resource Example - Source of Resource</a>
+          <a href="http://responsivelogos.co.uk/" target="_blank"
+            >Responsive Logos</a
+          >
         </li>
+        <li><a href="https://whitney.org/" target="_blank">The Whitney</a></li>
       </ul>
+      <p>Assignment inspired by John Provencher of Haha.Services</p>
     </main>
   </body>
 </html>
