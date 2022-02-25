@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: "Bluu Next";
+  src: url("./assets/fonts/bluunext-titling.woff2") format("woff2"),
+    url("./assets/fonts/bluunext-titling.woff") format("woff");
+}
+
+body {
+  font-family: "Bluu Next";
+  margin: 1rem;
+  font-size: 24px;
+}
+
+/* Personal Resets */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-size: 1rem;
+  max-width: 60ch;
+}
+
+/* Website Styling */
+.pages-list {
+  margin-bottom: 1rem;
+}
+
+ul.projects-list li {
+  position: relative;
+}
+
+ul.projects-list li img {
+  display: none;
+  z-index: -1;
+  position: absolute;
+  left: 3rem;
+  top: -6rem;
+  height: 12rem;
+}
+
+ul.projects-list li:hover img {
+  display: initial;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 8rem;
+  }
+
+  nav {
+    position: fixed;
+  }
+
+  ul.projects-list li img {
+    top: -12rem;
+    height: 24rem;
+  }
+}
+
+a {
+  color: red;
+}
+
+a {
+  color: blue;
+}
