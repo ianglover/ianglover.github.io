@@ -1,15 +1,17 @@
 // STEP 1: VARIABLES
 const colors = ["#16232E", "#164C45", "#CC8D1A", "#E3C75F", "#BDA523"]
 
-const currentDate = new Date() 
-const currentFullYear = currentDate.getFullYear()
-const currentMonth = currentDate.getMonth()
-const currentDay = currentDate.getDay()
-const currentHour = currentDate.getHours()
-const currentMinute = currentDate.getMinutes()
-const currentSeconds = currentDate.getSeconds()
+const newDate = new Date();
+const currentDate = {
+    year: newDate.getFullYear(), 
+    month: newDate.getMonth(),
+    day: newDate.getDay(), 
+    hour: newDate.getHours(),
+    minute: newDate.getMinutes(),
+    seconds: newDate.getSeconds(),
+}
 
-const stepsArray = [currentFullYear, currentMonth, currentDay, currentHour, currentMinute, currentSeconds]
+const stepsArray = [currentDate.year, currentDate.month, currentDate.day, currentDate.hour, currentDate.minute, currentDate.seconds]
 
 // STEP 2: DOM REFERENCES
 const bodyElement = document.querySelector('div#app')
@@ -29,7 +31,6 @@ const generateGradient = (colorOne, colorTwo) => {
 
 const generateRandomNumberBetweenValues = (valueOne, valueTwo) => {
     const randomNumber = Math.floor(Math.random() * valueTwo) + valueOne;
-    console.log(randomNumber)
     return randomNumber
 }
 
