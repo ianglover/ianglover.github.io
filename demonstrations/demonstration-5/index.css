@@ -1,0 +1,63 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 5%;
+}
+
+div#static {
+    margin-bottom: 2rem;
+    width: 100%; 
+}
+
+div#static h1 {
+    margin: 0 auto;
+    margin-bottom: 1rem; 
+    max-width: 40ch;
+    text-align: center;
+}
+
+div#static p {
+    margin: 0 auto;
+    max-width: 60ch;
+    text-align: center;
+}
+
+div#illustrations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.container {
+    padding: 2%;
+    border: 1px solid #999; 
+    border-radius: 6px;
+    margin: 2%;
+    width: 46%;
+    background-color: #f1efef;
+}
+
+img.image {
+    max-width: 100%;
+}
+
+p.title {
+    text-align: center;
+    padding: 12px; 
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    div.container {
+        width: 29%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.container {
+        width: 21%;
+    }
+}
