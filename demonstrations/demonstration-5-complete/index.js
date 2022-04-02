@@ -11,9 +11,7 @@ const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 // STEP 2: DOM REFERENCES
 const bodyElement = document.querySelector("main#app");
 
-// STEP 3: FUNCTIONS
-
-// STEP 4: USING FUNCTIONS, VARIABLES, AND LOOPS
+// STEP 3: USING FUNCTIONS, VARIABLES, AND LOOPS
 
 // Get a 'Promise' Representing the Data that Will be Returned
 fetch(authenticatedUrl)

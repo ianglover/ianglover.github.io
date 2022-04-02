@@ -25,7 +25,7 @@ div#information h1 {
 div#information p {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 main#app {

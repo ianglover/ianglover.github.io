@@ -1,78 +1,118 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Core 2: Interaction Lab / Assignment 5</title>
-    <meta name="description" content="A repository for information on the Core 2 Interaction Lab course." />
+    <title>Core 2: Interaction Lab / Assignment 6</title>
+    <meta
+      name="description"
+      content="A repository for information on the Core 2 Interaction Lab course."
+    />
     <meta name="author" content="Ian Glover" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <a href="/index.html">Core 2: Interaction Lab</a>
-        <h1>Assignment #5 - Website as Calendar</h1>
-        <p>
-            Our homework assignment is to create a website which changes over time.
+      <a href="/index.html">Core 2: Interaction Lab</a>
+      <h1>Assignment #6 - Databases & APIs</h1>
+      <p>
+        Our homework assignment is to begin learning about how to work with
+        external network resources, such as Databases and APIs elsewhere on the
+        internet. To do so, we will begin by requesting data from an Airtable
+        Database that I have created, and load that data onto our pages.
+      </p>
+      <p>
+        First, I highly recommend watching these
+        <a>Web Dev Simplified</a> videos. The first is exploring the
+        <a href="https://www.youtube.com/watch?v=cuEtnrL9-H0" target="_blank"
+          >Fetch API</a
+        > ( 6 Minutes )
+        which we will be using to make Network Requests.
+      </p>
+      <p>
+        If you found the concept of 'Promises' introduced in the Fetch API video
+        confusing, then I would recommend also watching the
+        <a href="https://www.youtube.com/watch?v=DHvZLI7Db8E" target="_blank"
+          >Javascript Promises in 10 Minutes</a
+        > ( 10 Minutes )
+        video.
+      </p>
+      <p>
+        Finally, I have recorded a demonstration on
+        <a href="https://www.loom.com/share/b2fa0c1b310f420caf93c01a2af5ed10"
+          >API & Databases: Requesting Data and Adding It To Your Page</a
+        > ( 1 hour ), which will pull together all the concepts necessary to complete the
+        homework.
+      </p>
+      <p>
+        You can also reference and review the
+        <a href="/demonstrations/demonstration-5-complete/" target="_blank"
+          >Completed Website from the demonstration</a
+        >, as well as its
+        <a
+          href="https://github.com/ianglover/ianglover.github.io/tree/main/demonstrations/demonstration-5-complete"
+          target="_blank"
+          >Completed Codebase</a
+        >. I would recommend having the codebase open while watching the demonstration video. 
+      </p>
+      <h3>Homework</h3>
+      <ol>
+        <li><p>Create an <a href="https://airtable.com/" target="_blank">Airtable</a> Account</p></li>
+        <li><p>
+          Create a page that uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch" target="_blank">Fetch</a> function to request Data from the "Flowers of Fire:
+          Illustrations from Japanese Fireworks Catalogues" Airtable Database that
+          I have created using the following API Key and Table URL which I have
+          gathered for you ( see the API & Databses demonstration to see where and
+          how I acquired this information )
         </p>
-        <p>
-            It can change based on a timeline of your choosing - perhaps it changes
-            every minute of the hour and repeats every hour, or changes each day of
-            the year. It could use different timespans as well, changing some
-            elements over the course of the hours of the day and others over the
-            course of the month.
-        </p>
-        <p>
-            The site can have any purpose, but it should be expressive - it can be
-            purely an abstract generative composition, or it could tell a story that
-            changes over time, but the appearance and functionality of the website
-            should feel like a coherent concept.
-        </p>
-        <h3>Resources</h3>
-        <ul>
-            <li>
-                <a href="https://vimeo.com/amtparsons/review/513584741/1072c79ab6" target="_blank">Demo: Introduction to
-                    Javascript ( password: interaction )</a>
-            </li>
-            <li>
-                <a href="https://vimeo.com/amtparsons/review/519265257/ab6512b296" target="_blank">Demo: Javascript +
-                    the DOM ( password: interaction )</a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement"
-                    target="_blank">Creating Elements - MDN</a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append" target="_blank">Adding
-                    Elements to DOM ( 'Appending' Elements ) - MDN</a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval" target="_blank">Set Interval -
-                    MDN</a>
-            </li>
-            <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventListener" target="_blank">
-                    Event Listener - MDN
-                </a>
-            </li>
-        </ul>
-        <h3>Reference</h3>
-        <ul>
-            <li>
-                <a href="https://left.gallery/work/calendarsearth-and-phrasal-clock" target="_blank">calendars.earth &
-                    phrasal clock - Micah Shippa</a>
-            </li>
-            <li>
-                <a href="https://www.colour-time.com/" target="_blank">Colour Time - Jonathon Chomko</a>
-            </li>
-        </ul>
         <br />
+        <code>
+          <!-- API KEY -->
+          const airtableApiKey = "keyUdTIA7XPdyI7Vi"; 
+        </code>
         <br />
-    </main>
-</body>
+        <code>
+          const tableUrl = "https://api.airtable.com/v0/appNBOMaj7ch0wKcM/Illustrations";
+        </code>
+        <br />
+        <p>
+          When you have the data, use Javascript to add those elements to your
+          page.
+        </p>
+        <p>
+          The page design is entirely up to you, but it should clearly display the
+          information from the database and be usable on all screen sizes.
+        </p></li>
+      </ol>
+      <h3>Asynchronous Homework</h3>
+      <ul>
+        <li>
+          Watch the
+          <a href="https://www.loom.com/share/b2fa0c1b310f420caf93c01a2af5ed10"
+            >API & Databases: Requesting Data and Adding It To Your Page</a
+          >
+        </li>
+      </ul>
+      <h3>Resources</h3>
+      <ul>
 
+        <li>
+          <a href="https://www.youtube.com/watch?v=cuEtnrL9-H0" target="_blank"
+            >Learn Fetch API in 6 Minutes - Web Dev Simplified</a
+          >
+        </li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch" target="_blank">Fetch - MDN</a></li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=DHvZLI7Db8E" target="_blank"
+            >Javascript Promises in 10 Minutes - Web Dev Simplified</a
+          >
+        </li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise - MDN</a></li>
+      </ul>
+      <br />
+      <br />
+    </main>
+  </body>
 </html>
