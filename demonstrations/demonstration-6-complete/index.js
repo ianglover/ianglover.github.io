@@ -74,11 +74,6 @@ const usersWithCreditInDollars = users.map((user) => {
     return userWithCreditInDollars
 })
 
-// SOME
-const isAuthenticatedUsers = users.some((user) => {
-    return user.authenticated
-})
-
 // FILTER
 const authenticatedUsers = users.filter((user) => {
     return user.authenticated
