@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Core 2: Interaction Lab / Assignment 6</title>
-    <meta
-      name="description"
-      content="A repository for information on the Core 2 Interaction Lab course."
-    />
+    <title>Core 2: Interaction Lab / Assignment 7</title>
+    <meta name="description" content="A repository for information on the Core 2 Interaction Lab course." />
     <meta name="author" content="Ian Glover" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <main>
-      <a href="/index.html">Core 2: Interaction Lab</a>
-      <h1>Assignment #6 - Personal Lore</h1>
-      <p>
-        Our homework assignment is to create a website which tells a story that
-        changes...
-      </p>
-
-      <h3>Resources</h3>
-      <ul>
-        <li>
-          <a
-            href="https://www.loom.com/share/642db2f14d5d47b092cfd474a8c16b31"
-            target="_blank"
-            >Demonstration 6: Working with Data - Loom</a
-          >
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=G3BS3sh3D8Q" target="_blank"
-            >Javascript Array Map - Programming with Mosh</a
-          >
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=G3BS3sh3D8Q" target="_blank"
-            >Javascript Array Filter - Programming with Mosh</a
-          >
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=G3BS3sh3D8Q" target="_blank"
-            >Javascript Array Filter - Programming with Mosh</a
-          >
-        </li>
-      </ul>
-      <h3>Reference</h3>
-      <ul>
-        <li>
-          <a
-            href="https://left.gallery/work/calendarsearth-and-phrasal-clock"
-            target="_blank"
-            >calendars.earth & phrasal clock - Micah Shippa</a
-          >
-        </li>
-      </ul>
-      <br />
-      <br />
+        <a href="/index.html">Core 2: Interaction Lab</a>
+        <h1>Assignment #7 - Text Generators</h1>
+        <p>
+            Our homework assignment is to create a website which creates dynamic text
+            that updates each time the page is reloaded. You could use your text generator to create any kind of text
+            (poems, stories, fake
+            bands) as long as at least three elements of the text change on each update - try out changing names, verbs,
+            nouns, and descriptions.
+        </p>
+        <p>For example, I created a page that generates <a href="/assignments/assignment-7/example/">Castle
+                Descriptions</a> each time the page is reloaded.
+        </p>
+        <p>Use Airtable to store the different text you would like to use as sources, and use Array functions like <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">Map</a>,
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">Filter</a>,
+            and <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">Sort</a>
+            to organize and randomly select items from your data.
+        </p>
+        <p>Use Airtable to create a database with at least three fields - for example, my database contains three fields
+            <u>Type</u>, <u>Copy</u>, and <u>Genre</u> which I use to filter by Type, and optionally use Genre
+            secondarily to determine if it's going to be a 'Horror Story' castle or a 'Fantasy' castle.
+        </p>
+        <br />
+        <img src="./example/assets/airtable.png" style="max-width: 600px;" />
+        <br />
+        <i>Example Airtable Database</i>
+        <br />
+        <p>If you haven't already, you will need to generate your Airtable Api Key ( see: <a
+                href="https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key-"
+                target="blank">How do I get my API Key?</a> ) to use your own Databases.</p>
+        <p>You will also need to find the URL of your new base. You can review my demonstration on <a
+                href="https://www.loom.com/share/b2fa0c1b310f420caf93c01a2af5ed10">APIs & Databases</a> ( skip to 12:13
+            ), or review <a href="https://docs.softr.io/video-guides/airtable/how-to-find-airtable-base-url">How to find
+                your Airtable Base Url</a>.</p>
+        <h3>Resources</h3>
+        <ul>
+            <li><a href="https://www.loom.com/share/642db2f14d5d47b092cfd474a8c16b31">In-Class Demonstration -
+                    Javascript: Working with Data ( Part 1 )</a></li>
+            <li><a href="https://www.loom.com/share/b4306edfe136434e80c0999e873b818d">Recorded Demonstration -
+                    Javascript: Working with Data ( Part 2 )</a></li>
+            <li><a href="/demonstrations/demonstration-6-complete/">Working with Data In-Class Demonstration ( Github
+                    Pages )</a></li>
+            <li><a
+                    href="https://github.com/ianglover/ianglover.github.io/tree/main/demonstrations/demonstration-6-complete">Working
+                    with Data In-Class Demonstration ( Codebase )</a></li>
+            <li><a href="https://youtu.be/rRgD1yVwIvE?t=31">JavaScript Higher Order Functions ( Map, Sort, Filter ) &
+                    Arrays
+                    - Traversy Media</a></li>
+            <li><a
+                    href="https://www.digitalocean.com/community/tutorials/4-uses-of-javascripts-arraymap-you-should-know">How
+                    To Use .map() to Iterate Through Array Items in JavaScript - Digital Ocean</a></li>
+            <li><a href="https://www.digitalocean.com/community/tutorials/js-array-sort-numbers">Using JavaScript's sort
+                    Method for Sorting Arrays of Numbers - Digital Ocean</a></li>
+            <li><a href="https://www.digitalocean.com/community/tutorials/js-filter-array-method">How To Use the
+                    filter() Array Method in JavaScript - Digital Ocean</a></li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement"
+                    target="_blank">Creating Elements - MDN</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append" target="_blank">Adding
+                    Elements to DOM ( 'Appending' Elements ) - MDN</a>
+            </li>
+        </ul>
+        <h3>Reference</h3>
+        <ul>
+            <li>
+                <a href="/assignments/assignment-7/example/" target="_blank">Castle Name Generator</a>
+            </li>
+            <li><a href="https://www.fantasynamegenerators.com/spell-descriptions.php">Fantasy Name Generators</a></li>
+        </ul>
+        <br />
+        <br />
     </main>
-  </body>
+</body>
+
+<br />
+<br />
+</main>
+</body>
+
 </html>
