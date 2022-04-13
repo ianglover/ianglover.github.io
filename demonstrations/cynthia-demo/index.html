@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #images-container {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        #images-container img {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 20vw;
+            transform: translate(-50%, -50%);
+        }
+
+        #images-container img.selected {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <button>0</button>
+            <button>1</button>
+            <button>2</button>
+        </nav>
+        <div id="images-container">
+            <img src="./assets/image-00.jpg" class="selected" />
+            <img src="./assets/image-01.jpg" />
+            <img src="./assets/image-02.jpg" />
+        </div>
+    </div>
+    <script>
+        // GET DOM ELEMENTS
+        const buttons = document.querySelectorAll('button')
+        const images = document.querySelectorAll('img')
+
+        // CREATE FUNCTIONS
+        const handleEvents = (event) => {
+            // ON EACH BUTTON, REMOVE ALL SELECTED CLASSES
+            for (let index = 0; index < images.length; index++) {
+                images[index].classList.remove('selected')
+            }
+            // TURN BACK ON BUTTON CORRESPONDING TO BUTTON PRESSED 
+            const buttonValue = event.target.innerHTML
+            images[buttonValue].classList.add('selected')
+        }
+
+        // APPLICATION
+        for (let index = 0; index < buttons.length; index++) {
+            buttons[index].addEventListener('click', handleEvents)
+            buttons[index].addEventListener('mouseover', handleEvents)
+        }
+    </script>
+</body>
+
+</html>
