@@ -43,6 +43,16 @@ fetch(authenticatedUrl)
       containerElement.appendChild(imageElement);
       containerElement.appendChild(titleElement);
     }
+    // get references to image elements
+    const imageElements = document.querySelectorAll('img')
+    // loop over image elements
+    for (let index = 0; index < imageElements.length; index++) {
+      // on the image element, add an event listener for mouseover
+      imageElements[index].addEventListener('mouseover', (event) => {
+        // add a class to the element that the event is triggered by called 'zoom'
+        event.target.classList.add('zoom')
+      })
+    }
   })
   .catch((error) => {
     console.log(error);
